@@ -115,9 +115,10 @@ YES24에서는 예매가능한 공연이 인터파크(NOL) 에서는 검색이 �
 ---
 
 ## **4. ERD**
-![image](https://github.com/user-attachments/assets/dcc02a80-cfdd-4633-8011-a2510c35465d)
+![image](https://github.com/user-attachments/assets/37f0781a-3831-4348-b94a-473d8a125637)
 
 ---
 
 ## **5. 테이블 명세서**
 [테이블 명세서]()
+
