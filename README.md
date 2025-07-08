@@ -91,7 +91,7 @@
 
 사용자는 자신이 좋아하는 공연이나 아티스트를 북마크 해두면, 예매처와 관계없이 해당 공연이 등록되었을 때 자동으로 알림을 받아 예매 기회를 놓치지 않을 수 있습니다.
 
-공연마다 다른 예매처의 가격 및 좌석 조건을 비교할 수 있어, 사용자에게 더 편리하고 만족도 높은 예매 환경을 제공할 것 입니다
+공연마다 다른 예매처의 가격 및 좌석 조건을 비교할 수 있어, 사용자에게 더 편리하고 만족도 높은 예매 환경을 제공할 것 입니다.
 
 ---
 
@@ -742,15 +742,15 @@ CREATE TABLE `notification` (
 
   - 변경 전  
       <br>
-      (이미지)
+     ![image](https://github.com/user-attachments/assets/72f0ba0b-1ec4-4c50-8f4b-2708019946ff)
       <br>
   - 프로시저  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/3357a774-40cf-46b7-a473-2f4c7b587f19)
       <br>
   - 변경 후  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/3d586402-0743-459a-8dcd-b4e88e312844)
       <br>
   </details>
 
@@ -759,15 +759,15 @@ CREATE TABLE `notification` (
 
   - 변경 전  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/c269e890-0c70-451c-8f78-bf2224f9b724)
       <br>
   - 프로시저  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/3ca4dd29-7b1d-49ab-805f-0f0f3f3065e5)
       <br>
   - 변경 후  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/787fbb7c-70d8-474c-bf7c-41524613c244)
       <br>
   </details>
 </details>
@@ -780,15 +780,15 @@ CREATE TABLE `notification` (
 
   - 변경 전  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/e447d959-f426-40b1-830b-662999844f40)
       <br>
   - 프로시저  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/663ab5d4-5927-4956-a6a6-f72aa01c5cae)
       <br>
   - 새 알림 등록  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/fdb5a037-86b7-4982-9c33-41a9439a6db6)
       <br>
   </details>
 
