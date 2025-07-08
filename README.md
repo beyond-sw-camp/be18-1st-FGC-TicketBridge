@@ -1,4 +1,4 @@
-# be18-1st-3team
+# be18-1st-FGC-TicketBridge
 ## 팀원 소개
 <table>
   <tr align="center">
