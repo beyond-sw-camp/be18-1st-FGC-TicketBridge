@@ -483,23 +483,23 @@ CREATE TABLE `notification` (
   <details>
     <summary>4. 회원의 이메일/비밀번호를 찾는다</summary>
 
-  - 회원의 이메일 찾기  
+   - 회원의 이메일 찾기  
       - 프로시저  
         <br>
-        (이미지)
+        ![image](https://github.com/user-attachments/assets/7d9f8a90-6a0b-4de7-9a27-ed639b593d75)
         <br>
       - 결과  
         <br>
-        (이미지)
+        ![image](https://github.com/user-attachments/assets/1ded459a-93b6-48ad-8f50-8df396cf7518)
         <br>
-    - 회원의 비밀번호 찾기  
+  - 회원의 비밀번호 찾기  
       - 프로시저  
         <br>
-        (이미지)
+        ![image](https://github.com/user-attachments/assets/c838216e-4d47-47c8-8910-3dc7ff8c8699)
         <br>
       - 결과  
         <br>
-        (이미지)
+        ![image](https://github.com/user-attachments/assets/83ff216a-ff02-48a9-9c68-a6838094531b)
         <br>
   </details>
 </details>
@@ -688,24 +688,24 @@ CREATE TABLE `notification` (
   <details>
     <summary>3. 좋아요/싫어요 많은 순으로 정렬</summary>
 
-  - 좋아요 순 정렬  
-      <br>
-      (이미지)
-      <br>
+  - 좋아요 순 정렬
+      - 프로시저  
+        <br>
+        ![image](https://github.com/user-attachments/assets/04bafb34-72d1-467c-8f30-f625bf40c054)
+        <br>
       - 결과  
         <br>
-        (이미지)
+        ![image](https://github.com/user-attachments/assets/0785aee1-1df8-4212-8f43-4bf47021e547)
         <br>
-  - 싫어요 순 정렬  
-      <br>
-      (이미지)
-      <br>
-  - 결과  
-      <br>
-      (이미지)
+  - 싫어요 순 정렬
+      - 프로시저
         <br>
-  </details>
-
+        ![image](https://github.com/user-attachments/assets/1a5c2d8c-8b5e-4b70-b7eb-5e5fdac06036)
+        <br>
+      - 결과  
+        <br>
+        ![image](https://github.com/user-attachments/assets/10404264-4629-412a-850a-8927f1bf046d)
+        <br>
   <details>
     <summary>4. 리뷰 삭제</summary>
 
@@ -809,32 +809,33 @@ CREATE TABLE `notification` (
 
   - 공연 시작 날짜  
       <br>
-      (이미지)
+      ![image](https://github.com/user-attachments/assets/f0eeb504-93cf-495f-b434-0d116167d3a9)
       <br>
     - 프로시저  
       <br>
-      (이미지)
+      ![image (1)](https://github.com/user-attachments/assets/1b838ea4-fe90-44c8-b532-1c9d3e477ee5)
       <br>
     - 결과  
       <br>
-      (이미지)
+      ![image (2)](https://github.com/user-attachments/assets/dd3c987b-39be-4f86-b215-e8496a6f122b)
       <br>
   </details>
+
 
   <details>
     <summary>4. 예매 당일 공연 시작 전 알림 발송</summary>
 
   - 공연 시작 시간  
       <br>
-      (이미지)
+      ![image (3)](https://github.com/user-attachments/assets/5743a569-8f1a-471f-bec3-d80ca4cbe84b)
       <br>
     - 프로시저  
       <br>
-      (이미지)
+      ![image (4)](https://github.com/user-attachments/assets/c8324a32-a4d3-4a28-a7fe-ad27e30e5bdf)
       <br>
     - 결과  
       <br>
-      (이미지)
+      ![image (5)](https://github.com/user-attachments/assets/367dd162-2854-4260-be9b-8995be1b45ab)
       <br>
   </details>
 
@@ -843,15 +844,15 @@ CREATE TABLE `notification` (
 
   - 티켓팅 시작일  
       <br>
-      (이미지)
+      ![image (6)](https://github.com/user-attachments/assets/6a681971-d900-4ef2-8cc9-809f4c53ac2f)
       <br>
     - 프로시저  
       <br>
-      (이미지)
+      ![image (7)](https://github.com/user-attachments/assets/97971195-2831-47eb-8e9b-e8a9e96d0899)
       <br>
     - 결과  
       <br>
-      (이미지)
+      ![image (8)](https://github.com/user-attachments/assets/8770af37-faa9-4cd9-93fd-ffa584ffe066)
       <br>
   </details>
 </details>
