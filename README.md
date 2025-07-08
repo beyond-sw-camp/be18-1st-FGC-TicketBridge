@@ -25,21 +25,24 @@
 
 1. 개요
     
-    1-1. [주제](#1.1-주제)
+    1-1. [주제](#11-주제)
     
-    1-2. 프로젝트 배경 및 필요성
+    1-2. [프로젝트 배경 및 필요성](#12-프로젝트-배경-및-필요성)
     
-    1-3. 프로젝트 소개
+    1-3. [프로젝트 소개](#13-프로젝트-소개)
     
-    1-4. 프로젝트 주요기능
+    1-4. [프로젝트 주요기능](#14-프로젝트-주요기능)
     
-    1-5. 서비스 차별화 전략
+    1-5. [서비스 차별화 전략](#15-서비스-차별화-전략)
     
-2. 유스케이스 다이어그램
-3. 요구사항 명세서
-4. ERD
-5. 테이블 명세서
-6. 💻SQL개발
+2. [WBS](#2-wbs)
+3. [요구사항 명세서](#3-요구사항-명세서)
+4. [유스케이스 다이어그램](#4-유스케이스-다이어그램)
+5. [테이블 명세서](#5-테이블-명세서)
+6. [ERD](#6-erd)
+7. [DDL](#7-ddl)
+8. [프로시저](#8-프로시저)
+9. [회고](#9-회고)
 
 ---
 
@@ -126,21 +129,45 @@
 - 실전과 동일한 예매 환경을 제공해 사전 연습 가능
 ---
 
-## **2. 유스케이스 다이어그램**
-<img src="https://github.com/user-attachments/assets/2139b138-ab01-457a-b6a9-c52f005062ae" width="50%" />
+## **2. WBS**
+[👉WBS 바로가기](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=1299906392#gid=1299906392)
+
+<img alt="image" src="https://github.com/user-attachments/assets/fa3db2ca-25d2-4827-a999-292e575676d7" width="50%"/>
 
 
 ---
 
 ## **3. 요구사항 명세서**
-[요구사항 명세서](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?usp=sharing)
+[👉요구사항 명세서 바로가기](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?usp=sharing)
+
+
+<img alt="image" src="https://github.com/user-attachments/assets/284e235d-1d66-41b8-9bfb-3a076ac2d5ef" width="50%" />
+
 ---
 
-## **4. ERD**
-![image](https://github.com/user-attachments/assets/66d5bfa4-165c-477d-9c98-0b6331784f8b)
+## **4. 유스케이스 다이어그램**
+<img src="https://github.com/user-attachments/assets/2139b138-ab01-457a-b6a9-c52f005062ae" width="50%"/>
 
 ---
 
 ## **5. 테이블 명세서**
-[테이블 명세서]()
+[👉 테이블 명세서 바로가기](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=993473287#gid=993473287)
 
+<img alt="image" src="https://github.com/user-attachments/assets/d8346454-3ca9-4717-b71d-4be44dfac46b" width="50%" />
+
+---
+
+## **6. ERD**
+![image](https://github.com/user-attachments/assets/66d5bfa4-165c-477d-9c98-0b6331784f8b)
+
+---
+
+## **7. DDL**
+
+---
+
+## **8. 프로시저**
+
+
+---
+## **9. 회고**
