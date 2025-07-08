@@ -103,11 +103,9 @@
     **YES24, 인터파크, 티켓링크 등 주요 티켓팅 사이트의 공연 정보를 수집하여 화면에서 통합 제공**
     
 - **좌석 시야 정보 제공**
-    
-    
 - **북마크 기능**
 - **관람 후기 리뷰 기능**
-- **북마크 및 예매 정보 기입 시 알림 기능**
+- **알림 기능**
 - **공연 추천 기능**
 
 ---
@@ -115,14 +113,14 @@
 ## **1.5 서비스 차별화 전략**
 ## 통합 플랫폼
 
-- 여러 공연 예매 사이트(인터파크, YES24, 티켓링크 등)의 공연 정보를 하나의 플랫폼에 통합하여 사용자에게 제공하여 사용자 접근성 향상,
-- 사용자는 각 사이트를 일일이 방문할 필요 없이, 한 곳에서 공연 검색, 예매까지 가능,
-- 사이트별 잔여석, 좌석 배치를 실시간으로 연동하여 정보 제공,
+- 여러 공연 예매 사이트(인터파크, YES24, 티켓링크 등)의 공연 정보를 하나의 플랫폼에 통합하여 사용자에게 제공하여 사용자 접근성 향상
+- 사용자는 각 사이트를 일일이 방문할 필요 없이, 한 곳에서 공연 검색, 예매까지 가능
+- 사이트별 잔여석, 좌석 배치를 실시간으로 연동하여 정보 제공
 
 ### **공연 좌석 정보 제공**
 
-- 좌석별 시야 이미지, 후기, 별점 등 시각적이고 직관적인 정보 제공,
-- 좌석 선택 시 실제 공연장에서의 시야를 미리 확인할 수 있어 사용자의 좌석 선택의 폭 증가,
+- 좌석별 시야 이미지, 후기, 별점 등 시각적이고 직관적인 정보 제공
+- 좌석 선택 시 실제 공연장에서의 시야를 미리 확인할 수 있어 사용자의 좌석 선택의 폭 증가
 
 ### **예매 연습 기능**
 
@@ -130,7 +128,7 @@
 ---
 
 ## **2. WBS**
-[👉WBS 바로가기](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=1299906392#gid=1299906392)
+<a href="https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=1299906392#gid=1299906392" target="_blank">👉WBS 바로가기</a>
 
 <img alt="image" src="https://github.com/user-attachments/assets/fa3db2ca-25d2-4827-a999-292e575676d7" width="50%"/>
 
@@ -138,7 +136,7 @@
 ---
 
 ## **3. 요구사항 명세서**
-[👉요구사항 명세서 바로가기](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?usp=sharing)
+<a href="https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=0#gid=0" target="_blank">👉요구사항 명세서 바로가기</a>
 
 
 <img alt="image" src="https://github.com/user-attachments/assets/284e235d-1d66-41b8-9bfb-3a076ac2d5ef" width="50%" />
@@ -151,7 +149,9 @@
 ---
 
 ## **5. 테이블 명세서**
-[👉 테이블 명세서 바로가기](https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=993473287#gid=993473287)
+
+<a href="https://docs.google.com/spreadsheets/d/1_PlSBTiDaWMltI1_8KaKv3UF04rUYA0L5o9ec0qnmz0/edit?gid=993473287#gid=993473287" target="_blank">👉테이블 명세서 바로가기</a>
+
 
 <img alt="image" src="https://github.com/user-attachments/assets/d8346454-3ca9-4717-b71d-4be44dfac46b" width="50%" />
 
