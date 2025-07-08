@@ -168,6 +168,474 @@
 
 ## **8. 프로시저**
 
+<details>
+  <summary>1. 회원</summary>
+
+  <details>
+    <summary>1. 회원가입을 통해 user entity에 회원이 등록되어야 한다</summary>
+
+  - 회원가입  
+    - 기존 데이터  
+      <br>
+      <img width="979" alt="스크린샷 2025-07-08 오후 4 22 19" src="https://github.com/user-attachments/assets/b9b36007-18f9-4001-9fce-3dfd6d4447ae" />
+      <br>
+
+    - 회원 추가 프로시저 생성  
+      
+      <br>
+      <img width="992" alt="스크린샷 2025-07-08 오후 4 27 56" src="https://github.com/user-attachments/assets/523a6570-53b6-4a92-9ab0-a981f32bdadd" />
+      <br>
+
+    - 프로시저 실행 결과
+      <br>
+      <img width="1018" alt="스크린샷 2025-07-08 오후 4 28 38" src="https://github.com/user-attachments/assets/5c3cc653-39af-42cf-aa13-6fd11419dcc0" />
+      <br>
+
+  </details>
+
+  <details>
+    <summary>2. 회원 정보를 수정한다 (닉네임, 비밀번호, 프로필사진)</summary>
+
+   - 회원 정보 수정  
+      - 기존 데이터  
+        <br>
+        <img width="1013" alt="스크린샷 2025-07-08 오후 4 39 40" src="https://github.com/user-attachments/assets/c217304d-056f-4faf-a173-7593a2b43601" />
+        <br>
+      - 프로시저  
+        <br>
+        <img width="999" alt="스크린샷 2025-07-08 오후 4 40 06" src="https://github.com/user-attachments/assets/00d7b197-70f6-4f47-848b-ad50cb3e40fb" />
+        <br>
+      - 실행 후 결과 값  
+        <br>
+        <img width="997" alt="스크린샷 2025-07-08 오후 4 40 21" src="https://github.com/user-attachments/assets/3c90ab99-ac8c-42e8-bdbe-43de0a5ccce7" />
+        <br>
+  </details>
+
+  <details>
+    <summary>3. 회원이 탈퇴하면 계정을 삭제한다</summary>
+
+  - 회원 삭제  
+      - 기존 데이터  
+        <br>
+        <img width="886" alt="스크린샷 2025-07-08 오후 4 36 52" src="https://github.com/user-attachments/assets/c38df3c9-57e9-4655-a4d9-f16d086581ab" />
+        <br>
+      - 프로시저  
+        <br>
+        <img width="901" alt="스크린샷 2025-07-08 오후 4 37 05" src="https://github.com/user-attachments/assets/da9e6bb4-127c-445a-93f6-ecfea8686d56" />
+        <br>
+      - 실행 결과  
+        <br>
+        <img width="952" alt="스크린샷 2025-07-08 오후 4 37 20" src="https://github.com/user-attachments/assets/f8c9eb97-60f2-4497-a20b-40f6fb285ae8" />
+        <br>
+  </details>
+
+  <details>
+    <summary>4. 회원의 이메일/비밀번호를 찾는다</summary>
+
+  - 회원의 이메일 찾기  
+      - 프로시저  
+        <br>
+        (이미지)
+        <br>
+      - 결과  
+        <br>
+        (이미지)
+        <br>
+    - 회원의 비밀번호 찾기  
+      - 프로시저  
+        <br>
+        (이미지)
+        <br>
+      - 결과  
+        <br>
+        (이미지)
+        <br>
+  </details>
+</details>
+
+<details>
+  <summary>2. 공연</summary>
+
+  <details>
+    <summary>1. 공연 목록/검색 (필터 조건: 공연명, 일정, 장소 등)</summary>
+
+  - 사용자에 요구사항에 맞는 공연 목록 조회  
+      - 프로시저  
+        <br>
+        <img width="878" alt="스크린샷 2025-07-08 오후 4 40 50" src="https://github.com/user-attachments/assets/8c0a4508-8999-486d-b21b-260491d787c3" />
+        <br>
+      - 실행 결과  
+        - 전체 공연 조회  
+          <br>
+          <img width="1007" alt="스크린샷 2025-07-08 오후 4 41 12" src="https://github.com/user-attachments/assets/80a4e21c-4fb0-4fd2-9459-9aa668f679c7" />
+          <br>
+        - 공연명 ‘뮤지컬’ 포함 공연 전체 조회  
+          <br>
+          <img width="1005" alt="스크린샷 2025-07-08 오후 4 41 34" src="https://github.com/user-attachments/assets/1afe3f57-ba12-426b-9b88-953539eea471" />
+          <br>
+        - 공연장명 ‘인천시립극장’인 공연만 조회
+          <br>
+          <img width="1013" alt="스크린샷 2025-07-08 오후 4 41 49" src="https://github.com/user-attachments/assets/02092d16-520c-44d9-b3d3-a6183fb1c9fb" />
+          <br>
+  </details>
+
+  <details>
+    <summary>2. 공연 상세 조회 (공연 PK, 공연명, 일정 등)</summary>
+
+  - 프로시저  
+      <br>
+      <img width="1006" alt="스크린샷 2025-07-08 오후 4 42 18" src="https://github.com/user-attachments/assets/e23ef69f-25c5-478b-81a6-28680d7972d4" />
+      <br>
+    - 실행 결과  
+      - "뮤직밤 클래식" 상세정보  
+        <br>
+        <img width="1012" alt="스크린샷 2025-07-08 오후 4 42 34" src="https://github.com/user-attachments/assets/b6041775-6a9a-4695-89b5-fd2590d5f4bc" />
+        <br>
+        
+  </details>
+</details>
+
+<details>
+  <summary>3. 예매</summary>
+
+  <details>
+    <summary>1. 공연 예매 등록 (회원, 공연, 좌석, 예매일 등)</summary>
+
+  - 예매 등록 프로시저  
+      <br>
+      <img width="1014" alt="스크린샷 2025-07-08 오후 4 43 10" src="https://github.com/user-attachments/assets/1b53787b-c133-495b-af40-72bb25a5acea" />
+      <br>
+
+    - 실행 결과 ( 1번 회원의 티켓을 등록)  
+      <br>
+      <img width="974" alt="스크린샷 2025-07-08 오후 4 43 25" src="https://github.com/user-attachments/assets/61c93cdc-8723-43ec-9230-a8e188ced48f" />
+      <br>
+  </details>
+
+  <details>
+    <summary>2. 특정 사용자의 예매 내역 전체 조회</summary>
+
+  - 프로시저  
+      <br>
+      <img width="1018" alt="스크린샷 2025-07-08 오후 4 43 50" src="https://github.com/user-attachments/assets/0be11ddf-c3a1-4da3-a10b-07b0961e8b2d" />
+      <br>
+  - 실행 결과( 1번 회원의 모든 예매 내역 조회)  
+      <br>
+      <img width="771" alt="스크린샷 2025-07-08 오후 4 44 02" src="https://github.com/user-attachments/assets/19e6157c-0704-4e3b-b80b-953810746308" />
+      <br>
+  </details>
+
+  <details>
+    <summary>3. 내가 등록한 예매 삭제하기</summary>
+
+  - 프로시저  
+      <br>
+      <img width="979" alt="스크린샷 2025-07-08 오후 4 44 30" src="https://github.com/user-attachments/assets/7f0365b3-2028-4336-95a8-9d6c6df5a392" />
+      <br>
+- 실행 결과( 1번 회원의 모든 예매 삭제)  
+      <br>
+      <img width="1010" alt="스크린샷 2025-07-08 오후 4 44 55" src="https://github.com/user-attachments/assets/4df27e43-19a9-45bd-a1e4-197384d95875" />
+      <br>
+  </details>
+
+  <details>
+    <summary>4. 내가 등록한 예매 수정</summary>
+
+  - 기존 데이터  
+      <br>
+      (이미지)
+      <br>
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 실행 결과  
+      <br>
+      (이미지)
+      <br>
+  - 중복 예매 시 실행 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+</details>
+
+<details>
+  <summary>4. 북마크</summary>
+
+  <details>
+    <summary>1. 공연 북마크 등록</summary>
+
+  - 프로시저  
+      <br>
+      <img width="1011" alt="스크린샷 2025-07-08 오후 4 45 15" src="https://github.com/user-attachments/assets/87bdf17a-7955-491f-84f5-198f2c616f1d" />
+      <br>
+  - 실행 결과(1번 유저의 3번 공연 북마크 추가) 
+      <br>
+      <img width="927" alt="스크린샷 2025-07-08 오후 4 45 33" src="https://github.com/user-attachments/assets/b20d64cb-80a2-4920-aedc-7029900ae60c" />
+      <br>
+
+  </details>
+
+  <details>
+    <summary>2. 회원별 북마크 내역 전체 조회</summary>
+
+  - 프로시저  
+      <br>
+      <img width="865" alt="스크린샷 2025-07-08 오후 4 45 56" src="https://github.com/user-attachments/assets/b8af7188-10a3-4ae4-9fc0-aeba3362a4fc" />
+      <br>
+
+  - 실행 결과(1번 회원이 등록한 모든 북마크 내역 조회 )
+      <br>
+      <img width="1024" alt="스크린샷 2025-07-08 오후 4 46 11" src="https://github.com/user-attachments/assets/7288fcf8-88d0-470b-b779-a2f43bb86527" />
+      <br>
+  </details>
+
+  <details>
+    <summary>3. 공연 북마크 해체</summary>
+
+  - 프로시저  
+      <br>
+      <img width="1012" alt="스크린샷 2025-07-08 오후 4 46 25" src="https://github.com/user-attachments/assets/35e16876-d27b-46a9-bf84-8f72e42ed86a" />
+      <br>
+  - 실행 결과( 1번 회원의  3번 공연 북마크 삭제)
+      <br>
+      <img width="984" alt="스크린샷 2025-07-08 오후 4 46 43" src="https://github.com/user-attachments/assets/85e529cc-5665-488c-874c-756b08cdf7fc" />
+      <br>
+  </details>
+</details>
+
+<details>
+  <summary>5. 리뷰</summary>
+
+  <details>
+    <summary>1. 공연 리뷰 등록 (별점, 한줄평, 사진 등)</summary>
+
+  - 프로시저  
+      <br>
+      <img width="1019" alt="스크린샷 2025-07-08 오후 4 48 57" src="https://github.com/user-attachments/assets/09d8f9d6-8b6b-4fbf-846a-f09d99146c8e" />
+      <br>
+  - 실행 결과( 1번 회원의 리뷰 작성)  
+      <br>
+      <img width="914" alt="스크린샷 2025-07-08 오후 4 49 16" src="https://github.com/user-attachments/assets/74fa7b6c-053c-4a93-a795-1d3f08832f75" />
+      <br>
+  </details>
+
+  <details>
+    <summary>2. 내 리뷰 확인하기 (모든 리뷰 보기)</summary>
+
+  - 프로시저  
+      <br>
+      <img width="702" alt="스크린샷 2025-07-08 오후 4 49 31" src="https://github.com/user-attachments/assets/d954d2d1-8b8a-4419-be0a-339f5750c052" />
+      <br>
+  - 실행 결과( 1번 회원의 리뷰 목록 확인하기)  
+      <br>
+      <img width="1015" alt="스크린샷 2025-07-08 오후 4 50 17" src="https://github.com/user-attachments/assets/bf4c21d1-1670-4502-b98e-b36c2b5a101d" />
+      <br>
+  </details>
+
+  <details>
+    <summary>3. 좋아요/싫어요 많은 순으로 정렬</summary>
+
+  - 좋아요 순 정렬  
+      <br>
+      (이미지)
+      <br>
+      - 결과  
+        <br>
+        (이미지)
+        <br>
+  - 싫어요 순 정렬  
+      <br>
+      (이미지)
+      <br>
+  - 결과  
+      <br>
+      (이미지)
+        <br>
+  </details>
+
+  <details>
+    <summary>4. 리뷰 삭제</summary>
+
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 실행 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>5. 리뷰 좋아요/싫어요</summary>
+
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 실행 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+</details>
+
+<details>
+  <summary>6. 관심사</summary>
+
+  <details>
+    <summary>1. 회원의 관심 장르 등록/수정</summary>
+
+  - 변경 전  
+      <br>
+      (이미지)
+      <br>
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 변경 후  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>2. 회원의 관심 퍼포머 등록/수정</summary>
+
+  - 변경 전  
+      <br>
+      (이미지)
+      <br>
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 변경 후  
+      <br>
+      (이미지)
+      <br>
+  </details>
+</details>
+
+<details>
+  <summary>7. 알림</summary>
+
+  <details>
+    <summary>1. 알림 등록</summary>
+
+  - 변경 전  
+      <br>
+      (이미지)
+      <br>
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 새 알림 등록  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>2. 알림 전체 조회</summary>
+
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 기능  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>3. 예매한 공연의 하루 전 날 알림 발송</summary>
+
+  - 공연 시작 날짜  
+      <br>
+      (이미지)
+      <br>
+    - 프로시저  
+      <br>
+      (이미지)
+      <br>
+    - 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>4. 예매 당일 공연 시작 전 알림 발송</summary>
+
+  - 공연 시작 시간  
+      <br>
+      (이미지)
+      <br>
+    - 프로시저  
+      <br>
+      (이미지)
+      <br>
+    - 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>5. 북마크 공연 티켓팅 하루 전 알림 발송</summary>
+
+  - 티켓팅 시작일  
+      <br>
+      (이미지)
+      <br>
+    - 프로시저  
+      <br>
+      (이미지)
+      <br>
+    - 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+</details>
+
+<details>
+  <summary>8. 추천</summary>
+
+  <details>
+    <summary>1. 좋아하는 장르의 공연 추천</summary>
+
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+
+  <details>
+    <summary>2. 좋아하는 퍼포머의 공연 정보 추천</summary>
+
+  - 프로시저  
+      <br>
+      (이미지)
+      <br>
+  - 결과  
+      <br>
+      (이미지)
+      <br>
+  </details>
+</details>
+
+
 
 ---
 ## **9. 회고**
