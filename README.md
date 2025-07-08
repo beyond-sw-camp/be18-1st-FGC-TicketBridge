@@ -163,6 +163,257 @@
 ---
 
 ## **7. DDL**
+<details>
+<summary>1. users 테이블</summary>
+
+```sql
+ CREATE TABLE `users` (
+  `users_id` INT NOT NULL AUTO_INCREMENT,
+  `email` VARCHAR(255) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `nickname` VARCHAR(50) NOT NULL,
+  `gender` ENUM('남성','여성') NOT NULL,
+  `age` INT NOT NULL,
+  `profile_image` VARCHAR(255) DEFAULT NULL,
+  `create_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`users_id`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `nickname` (`nickname`),
+  CONSTRAINT `users_chk_1` CHECK ((`age` between 0 and 150))
+);
+```
+</details>
+
+<details>
+<summary>2. performers 테이블</summary>
+  
+```sql
+CREATE TABLE `performers` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `type` varchar(30) NOT NULL,
+  `agency` varchar(100) DEFAULT NULL,
+  `profile_img` varchar(255) DEFAULT NULL,
+  `bio` TEXT DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+);
+```
+</details>
+
+<details>
+<summary>3. show_performers 테이블</summary>
+  
+```sql
+CREATE TABLE `shows_performers` (
+  `shows_id` INT NOT NULL,
+  `performer_id` INT NOT NULL,
+  `performer_role` varchar(50) NOT NULL,
+  PRIMARY KEY (`shows_id`, `performer_id`,`performer_role`),
+  KEY `shows_id` (`shows_id`),
+  KEY `performer_id` (`performer_id`),
+  CONSTRAINT `show_performers_ibfk_2` FOREIGN KEY (`shows_id`) REFERENCES `shows` (`shows_id`),
+  CONSTRAINT `show_performers_ibfk_1` FOREIGN KEY (`performer_id`) REFERENCES `performers` (`id`)
+);
+```
+</details>
+
+
+
+<details>
+<summary>4. genres 테이블</summary>
+  
+```sql
+CREATE TABLE `genres` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `description` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name` (`name`)
+);
+```
+</details>
+
+<details>
+<summary>5. user_interest_genres 테이블</summary>
+  
+```sql
+CREATE TABLE `user_interest_genres` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `genres_id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `genres_id` (`genres_id`),
+  CONSTRAINT `user_interest_genres_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`users_id`),
+  CONSTRAINT `user_interest_genres_ibfk_2` FOREIGN KEY (`genres_id`) REFERENCES `genres` (`id`)
+);
+```
+</details>
+
+<details>
+<summary>6. user_interest_performers 테이블</summary>
+  
+```sql
+CREATE TABLE `user_interest_performers` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `performers_id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `performers_id` (`performers_id`),
+  CONSTRAINT `user_interest_performers_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`users_id`),
+  CONSTRAINT `user_interest_performers_ibfk_2` FOREIGN KEY (`performers_id`) REFERENCES `performers` (`id`)
+);
+```
+</details>
+
+<details>
+<summary>7. venues 테이블</summary>
+  
+```sql
+CREATE TABLE `venues` (
+  `venues_id` INT NOT NULL AUTO_INCREMENT,
+  `venues_name` VARCHAR(100) NOT NULL,
+  `venues_location` VARCHAR(150) DEFAULT NULL,
+  `seat_count` INT DEFAULT NULL,
+  `business_hours` VARCHAR(50) DEFAULT NULL,
+  PRIMARY KEY (`venues_id`),
+  UNIQUE KEY `name` (`name`)
+);
+```
+</details>
+
+<details>
+<summary>8. shows 테이블</summary>
+  
+```sql
+CREATE TABLE `shows` (
+  `shows_id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(200) NOT NULL,
+  `price` INT NOT NULL,
+  `genres_id` INT NOT NULL,
+  `venues_id` INT NOT NULL,
+  `start_date` DATETIME NOT NULL,
+  `end_date` DATETIME NOT NULL,
+  `ticket_open_at` DATETIME NOT NULL,
+  `ticket_close_at` DATETIME NOT NULL,
+  `platform` VARCHAR(50) NOT NULL,
+  `description` TEXT DEFAULT NULL,
+  `url` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`shows_id`),
+  KEY `genres_id` (`genres_id`),
+  KEY `venue_id` (`venues_id`),
+  CONSTRAINT `shows_ibfk_2` FOREIGN KEY (`genres_id`) REFERENCES `genres` (`id`),
+  CONSTRAINT `shows_ibfk_3` FOREIGN KEY (`venues_id`) REFERENCES `venues` (`venues_id`)
+);
+```
+</details>
+
+<details>
+<summary>9. seats 테이블</summary>
+  
+```sql
+CREATE TABLE `seats` (
+  `seat_id` INT NOT NULL AUTO_INCREMENT,
+  `venues_id` INT NOT NULL,
+  `section` VARCHAR(20) DEFAULT NULL,
+  `seats_row` VARCHAR(10) DEFAULT NULL,
+  `number` VARCHAR(10) DEFAULT NULL,
+  `seat_img` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`seat_id`),
+  KEY `venue_id` (`venues_id`),
+  CONSTRAINT `seats_ibfk_1` FOREIGN KEY (`venues_id`) REFERENCES `venues` (`venues_id`)
+);
+```
+</details>
+
+<details>
+<summary>10. reservations 테이블</summary>
+  
+```sql
+CREATE TABLE `reservations` (
+  `reserve_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `shows_id` INT NOT NULL,
+  `seat_id` INT DEFAULT NULL,
+  `reservation_date` DATETIME NOT NULL,
+  `platform` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`reserve_id`),
+  KEY `user_id` (`user_id`),
+  KEY `show_id` (`shows_id`),
+  KEY `seat_id` (`seat_id`),
+  CONSTRAINT `reservations_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`users_id`),
+  CONSTRAINT `reservations_ibfk_2` FOREIGN KEY (`shows_id`) REFERENCES `shows` (`shows_id`),
+  CONSTRAINT `reservations_ibfk_3` FOREIGN KEY (`seat_id`) REFERENCES `seats` (`seat_id`)
+);
+```
+</details>
+
+<details>
+<summary>11. bookmarks 테이블</summary>
+  
+```sql
+CREATE TABLE `bookmark` (
+  `bookmark_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `shows_id` INT NOT NULL,
+  `performers_id` INT NOT NULL,
+  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`bookmark_id`),
+  KEY `user_id` (`user_id`),
+  KEY `shows_id` (`shows_id`),
+  KEY `performers_id` (`performers_id`),
+  CONSTRAINT `bookmarks_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`),
+  CONSTRAINT `bookmarks_ibfk_2` FOREIGN KEY (`shows_id`) REFERENCES `shows` (`shows_id`),
+  CONSTRAINT `bookmarks_ibfk_3` FOREIGN KEY (`performers_id`) REFERENCES `performers` (`id`)
+);
+```
+</details>
+
+<details>
+<summary>12. reviews 테이블</summary>
+  
+```sql
+CREATE TABLE `reviews` (
+  `reviews_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `reserve_id` INT NOT NULL,
+  `rating` DECIMAL(2,1) NOT NULL,
+  `comment` TEXT DEFAULT NULL,
+  `review_like` INT DEFAULT NULL,
+  `review_hate` INT DEFAULT NULL,
+  `photo` VARCHAR(255) DEFAULT NULL,
+  `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`reviews_id`),
+  KEY `user_id` (`user_id`),
+  KEY `reserve_id` (`reserve_id`),
+  CONSTRAINT `reviews_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`users_id`),
+  CONSTRAINT `reviews_ibfk_2` FOREIGN KEY (`reserve_id`) REFERENCES `reservations` (`reserve_id`)
+);
+```
+</details>
+
+<details>
+<summary>13. notifications 테이블</summary>
+  
+```sql
+CREATE TABLE `notifications` (
+  `notifi_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `shows_id` INT NOT NULL,
+  `noti_type` ENUM('RESERVATION_SOON', 'RESERVATION_DAY_BEFORE', 'BOOKMARK_SOON', 'BOOKMARK_NEWS') NOT NULL,
+  `is_on` TINYINT(1) NOT NULL DEFAULT '1',
+  `sent_at` DATETIME NOT NULL,
+  PRIMARY KEY (`notifi_id`),
+  KEY `user_id` (`user_id`),
+  KEY `shows_id` (`shows_id`),
+  CONSTRAINT `notifications_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `notifications_ibfk_2` FOREIGN KEY (`shows_id`) REFERENCES `shows` (`shows_id`)
+);
+```
+</details>
+
 
 ---
 
