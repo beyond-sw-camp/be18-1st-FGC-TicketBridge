@@ -395,10 +395,10 @@ CREATE TABLE `reviews` (
 </details>
 
 <details>
-<summary>13. notifications 테이블</summary>
+<summary>13. notification 테이블</summary>
   
 ```sql
-CREATE TABLE `notifications` (
+CREATE TABLE `notification` (
   `notifi_id` INT NOT NULL AUTO_INCREMENT,
   `user_id` INT NOT NULL,
   `shows_id` INT NOT NULL,
