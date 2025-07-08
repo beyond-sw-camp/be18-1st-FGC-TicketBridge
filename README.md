@@ -706,6 +706,7 @@ CREATE TABLE `notification` (
         <br>
         ![image](https://github.com/user-attachments/assets/10404264-4629-412a-850a-8927f1bf046d)
         <br>
+        </details>
   <details>
     <summary>4. 리뷰 삭제</summary>
 
