@@ -784,15 +784,15 @@ CREATE TABLE `notification` (
 
   - 변경 전  
       <br>
-      ![image](https://github.com/user-attachments/assets/e447d959-f426-40b1-830b-662999844f40)
+      ![image](https://github.com/user-attachments/assets/2267b44a-c333-490a-b9ee-85a0a9c2a154)
       <br>
   - 프로시저  
       <br>
-      ![image](https://github.com/user-attachments/assets/663ab5d4-5927-4956-a6a6-f72aa01c5cae)
+      ![image](https://github.com/user-attachments/assets/c0eebffe-6fd4-4ac0-878f-73da5b45cdd9)
       <br>
   - 새 알림 등록  
       <br>
-      ![image](https://github.com/user-attachments/assets/fdb5a037-86b7-4982-9c33-41a9439a6db6)
+      ![image](https://github.com/user-attachments/assets/e4e4cdd6-e550-4e50-84ca-8f13e6854d6a)
       <br>
   </details>
 
