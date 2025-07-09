@@ -158,9 +158,10 @@
 ---
 
 ## **6. ERD**
-![image](https://github.com/user-attachments/assets/8be26278-8602-4212-8d29-16537c999978)
+![image](https://github.com/user-attachments/assets/5b1a0a76-43e5-4abb-bafd-8b407e891511)
 
 ---
+
 
 ## **7. DDL**
 <details>
