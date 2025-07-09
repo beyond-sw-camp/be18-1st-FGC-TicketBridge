@@ -595,19 +595,20 @@ CREATE TABLE `notification` (
 
   - 기존 데이터  
       <br>
-      (이미지)
+      ![{81DB170B-5592-4F82-9029-715AB47ECBC8}](https://github.com/user-attachments/assets/9ad0ccc9-491d-4030-a9bd-fec338ab7a2d)
       <br>
   - 프로시저  
       <br>
-      (이미지)
+      ![{D414C06E-80D3-4991-B103-F387CEA52C10}](https://github.com/user-attachments/assets/d511d984-6b57-4286-a80e-54a525f8fa21)
       <br>
   - 실행 결과  
       <br>
-      (이미지)
+      ![{8293F5D0-64A6-41C2-8FEB-3583726A02D0}](https://github.com/user-attachments/assets/1010aaec-8fde-4956-8977-078846a0c3a1)
       <br>
   - 중복 예매 시 실행 결과  
       <br>
-      (이미지)
+      ![{7FF8CEFD-7CB7-45C2-88B1-39B61C776462}](https://github.com/user-attachments/assets/66676c91-18c2-4976-a126-10a4280a4697)
+      ![{EF8E51E3-FBBA-4961-8EF1-E6D9222BAF42}](https://github.com/user-attachments/assets/aa7f3358-9471-464b-98bc-0b62a240feaf)
       <br>
   </details>
 </details>
@@ -713,11 +714,12 @@ CREATE TABLE `notification` (
 
   - 프로시저  
       <br>
-      (이미지)
+      <img width="572" alt="image" src="https://github.com/user-attachments/assets/0e787bff-ef71-4e06-a481-a7c934985314" />
       <br>
   - 실행 결과  
       <br>
-      (이미지)
+      <img width="303" alt="image (1)" src="https://github.com/user-attachments/assets/161cdafc-9e26-47e0-9659-71e0fad027b1" />
+      <img width="1088" alt="image (2)" src="https://github.com/user-attachments/assets/517d4740-7bc4-4122-8706-8c436cf2688d" />
       <br>
   </details>
 
@@ -726,11 +728,12 @@ CREATE TABLE `notification` (
 
   - 프로시저  
       <br>
-      (이미지)
+      <img width="780" alt="image (3)" src="https://github.com/user-attachments/assets/cc2c1a67-c525-44a1-95af-8c16bdf3a00b" />
       <br>
   - 실행 결과  
       <br>
-      (이미지)
+      <img width="361" alt="image (4)" src="https://github.com/user-attachments/assets/6de4bd2d-dcd3-4242-bd2a-7a75e1b38d73" />
+      <img width="1174" alt="image (5)" src="https://github.com/user-attachments/assets/2843a98c-f810-4743-8f88-98056495788a" />
       <br>
   </details>
 </details>
@@ -798,11 +801,11 @@ CREATE TABLE `notification` (
 
   - 프로시저  
       <br>
-      (이미지)
+      ![image (6)](https://github.com/user-attachments/assets/35a22dbd-55ce-4ba1-90a1-2380c9bd518f)
       <br>
   - 기능  
       <br>
-      (이미지)
+      ![image (7)](https://github.com/user-attachments/assets/e68e926a-62e8-4d97-aeba-83518b69a2fd)
       <br>
   </details>
 
@@ -867,11 +870,11 @@ CREATE TABLE `notification` (
 
   - 프로시저  
       <br>
-      (이미지)
+      <img width="658" alt="image (8)" src="https://github.com/user-attachments/assets/dbe376a5-f7d1-453c-82dc-3383edb1c89f" />
       <br>
   - 결과  
       <br>
-      (이미지)
+      <img width="1204" alt="image (9)" src="https://github.com/user-attachments/assets/d9232118-5bd8-409e-8340-fce7e7292fe3" />
       <br>
   </details>
 
@@ -880,11 +883,11 @@ CREATE TABLE `notification` (
 
   - 프로시저  
       <br>
-      (이미지)
+      <img width="677" alt="image (10)" src="https://github.com/user-attachments/assets/f6707fa9-0d68-42f2-9da9-5b02e1f6c8a0" />
       <br>
   - 결과  
       <br>
-      (이미지)
+      <img width="1194" alt="image (11)" src="https://github.com/user-attachments/assets/58c50ae1-0792-4b69-a66f-4a584edd893e" />
       <br>
   </details>
 </details>
