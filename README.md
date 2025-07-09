@@ -97,17 +97,17 @@
 
 ## 1.4 프로젝트 주요기능
 
-- **회원 기능**
+
 - **공연 일정 통합 조회**
     
-    **YES24, 인터파크, 티켓링크 등 주요 티켓팅 사이트의 공연 정보를 수집하여 화면에서 통합 제공**
+
     
 - **좌석 시야 정보 제공**
 - **북마크 기능**
 - **관람 후기 리뷰 기능**
 - **알림 기능**
 - **공연 추천 기능**
-
+- **예매 모의 연습 제공**
 ---
 
 ## **1.5 서비스 차별화 전략**
@@ -280,7 +280,7 @@ CREATE TABLE `venues` (
   `seat_count` INT DEFAULT NULL,
   `business_hours` VARCHAR(50) DEFAULT NULL,
   PRIMARY KEY (`venues_id`),
-  UNIQUE KEY `name` (`name`)
+  UNIQUE KEY `name` (`venues_name`)
 );
 ```
 </details>
